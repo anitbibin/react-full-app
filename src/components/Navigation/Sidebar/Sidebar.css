@@ -1,0 +1,32 @@
+.Sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    max-width: 70%;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    background-color: burlywood;
+    display: flex;
+    flex-flow: column;
+    transition: transform 0.3 ease-out; 
+}
+
+@media (min-width: 500px){
+    .Sidebar {
+        display: none;
+    }
+}
+
+.Open {
+    transform: translateX(0);
+}
+
+.Close {
+    transform: translateX(-100);
+}
+
+.Logo {
+    height: 24px;
+    padding: 16px 10px;
+}
